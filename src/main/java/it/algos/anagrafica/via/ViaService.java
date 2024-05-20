@@ -87,7 +87,7 @@ public class ViaService extends CrudCompanyService {
                 newBean = newEntity(++pos, rigaUnValore.get(0));
                 mappaBeans.put(rigaUnValore.get(0), newBean);
             }
-            mappaBeans.values().stream().forEach(bean -> creaIfNotExists((ViaEntity) bean));
+            mappaBeans.values().stream().forEach(bean -> creaIfNotExists( bean));
             return RisultatoReset.vuotoMaCostruito;
         }
         else {
