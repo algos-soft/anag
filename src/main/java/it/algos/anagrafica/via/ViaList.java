@@ -35,8 +35,6 @@ public class ViaList extends CrudCompanyList {
 
         super.usaBottoneDeleteAll = true;
         super.usaBottoneResetAdd = true;
-        super.usaSelettoreColonne = true;
-        super.setColonneLista("id", "ordine", "code");
     }
 
 
