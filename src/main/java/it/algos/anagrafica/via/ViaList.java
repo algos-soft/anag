@@ -1,7 +1,6 @@
 package it.algos.anagrafica.via;
 
 import com.vaadin.flow.component.*;
-import com.vaadin.flow.component.grid.*;
 import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.spring.annotation.*;
 import static it.algos.vbase.backend.boot.BaseCost.*;
@@ -36,6 +35,8 @@ public class ViaList extends CrudCompanyList {
 
         super.usaBottoneDeleteAll = true;
         super.usaBottoneResetAdd = true;
+        super.usaSelettoreColonne = true;
+        super.setColonneLista("id", "ordine", "code");
     }
 
 
