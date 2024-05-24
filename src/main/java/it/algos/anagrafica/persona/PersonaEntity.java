@@ -9,10 +9,11 @@ import lombok.*;
 import org.springframework.data.mongodb.core.mapping.*;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Document(collection = "persona")
+@Document(collection = "address")
 @AEntity()
 public class PersonaEntity extends AbstractEntity {
 

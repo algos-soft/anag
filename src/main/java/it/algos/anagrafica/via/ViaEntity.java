@@ -8,7 +8,10 @@ import org.springframework.data.mongodb.core.index.*;
 import org.springframework.data.mongodb.core.mapping.*;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Document(collection = "via")
 @AEntity(usaResetStartup = true)
 public class ViaEntity extends AbstractEntity {
