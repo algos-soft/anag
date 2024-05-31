@@ -13,7 +13,8 @@ import org.springframework.data.mongodb.core.mapping.*;
 @AllArgsConstructor
 @Builder
 @Document(collection = "via")
-@AEntity(usaResetStartup = true)
+@AReset(usaStartup = true)
+@AEntity()
 public class ViaEntity extends AbstractEntity {
 
     @AField(type = TypeField.ordine, headerText = "#")

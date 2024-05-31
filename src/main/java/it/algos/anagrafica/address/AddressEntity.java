@@ -13,7 +13,8 @@ import org.springframework.data.mongodb.core.mapping.*;
 @AllArgsConstructor
 @Builder
 @Document(collection = "address")
-@AEntity(usaResetStartup = true)
+@AReset()
+@AEntity()
 public class AddressEntity extends AbstractEntity {
 
     @AField(type = TypeField.linkDBRef, widthList = 8, linkClazz = ViaEntity.class)
