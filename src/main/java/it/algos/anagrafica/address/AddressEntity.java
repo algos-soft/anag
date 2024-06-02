@@ -17,17 +17,21 @@ import org.springframework.data.mongodb.core.mapping.*;
 @AEntity()
 public class AddressEntity extends AbstractEntity {
 
-    @AField(type = TypeField.linkDBRef, widthList = 8, linkClazz = ViaEntity.class)
+    @AFieldList(width = 8)
+    @AField(type = TypeField.linkDBRef, linkClazz = ViaEntity.class)
     @DBRef
     private ViaEntity typeVia;
 
-    @AField(type = TypeField.text, widthList = 14)
+    @AFieldList(width = 14)
+    @AField(type = TypeField.text)
     private String indirizzo;
 
-    @AField(type = TypeField.text, widthList = 18)
+    @AFieldList(width = 18)
+    @AField(type = TypeField.text)
     private String localita;
 
-    @AField(type = TypeField.text, widthList = 5)
+    @AFieldList(width = 5)
+    @AField(type = TypeField.text)
     private String cap;
 
     @Override

@@ -17,7 +17,8 @@ import org.springframework.data.mongodb.core.mapping.*;
 @AEntity()
 public class PersonaEntity extends AbstractEntity {
 
-    @AField(type = TypeField.text, widthList = 6)
+    @AFieldList(width = 6)
+    @AField(type = TypeField.text)
     private String titolo;
 
     @AField(type = TypeField.text)
@@ -26,10 +27,12 @@ public class PersonaEntity extends AbstractEntity {
     @AField(type = TypeField.text)
     private String cognome;
 
-    @AField(type = TypeField.text, widthList = 8)
+    @AFieldList(width = 8)
+    @AField(type = TypeField.text)
     private String telefono;
 
-    @AField(type = TypeField.text, widthList = 16)
+    @AFieldList(width = 16)
+    @AField(type = TypeField.text)
     private String mail;
 
     @AField(type = TypeField.linkDBRef)
