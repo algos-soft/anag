@@ -17,12 +17,14 @@ import org.springframework.data.mongodb.core.mapping.*;
 @AEntity()
 public class ViaEntity extends AbstractEntity {
 
-    @AField(type = TypeField.ordine, headerText = "#")
+    @AFieldList(headerText = "#")
+    @AField(type = TypeField.ordine)
     private int ordine;
 
     @Indexed(unique = true)
     @ASearch(type = TypeSearch.textStartsWith)
-    @AField(type = TypeField.text, headerText = "Nome", caption = "Nome")
+    @AFieldList(headerText = "Nome")
+    @AField(type = TypeField.text, caption = "Nome")
     private String code;
 
     @Override
