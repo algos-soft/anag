@@ -24,7 +24,8 @@ public class ViaEntity extends AbstractEntity {
     @Indexed(unique = true)
     @ASearch(type = TypeSearch.textStartsWith)
     @AFieldList(headerText = "Nome")
-    @AField(type = TypeField.text, caption = "Nome")
+    @AFieldForm(label = "Nome")
+    @AField(type = TypeField.text)
     private String code;
 
     @Override
