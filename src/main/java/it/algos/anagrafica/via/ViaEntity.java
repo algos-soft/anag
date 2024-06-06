@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.*;
 @AllArgsConstructor
 @Builder
 @Document(collection = "via")
-@AReset(usaStartup = true)
+@AReset()
 @AEntity()
 public class ViaEntity extends AbstractEntity {
 
