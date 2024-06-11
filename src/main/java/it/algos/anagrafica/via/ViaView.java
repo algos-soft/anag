@@ -15,9 +15,8 @@ import org.springframework.beans.factory.annotation.*;
  *
  * @Route chiamata dal menu generale o dalla barra del browser <br>
  */
-@PageTitle("Vie")
 @Route(value = "via", layout = MainLayout.class)
-@AView(menuGroup = MenuGroup.anagrafe)
+@AView(menuName = "Vie", menuGroup = MenuGroup.anagrafe)
 public class ViaView extends CrudView {
 
     /**
@@ -25,8 +24,8 @@ public class ViaView extends CrudView {
      * Mantiene il riferimento al CrudService (singleton) di questo Modulo, iniettato dalla sottoclasse concreta <br>
      * Mantiene il riferimento ad una listClazz (CrudList) per creare l'istanza prototype <br>
      */
-    ViaView(@Autowired ViaService moduloCrudService) {
-        super(moduloCrudService, ViaList.class);
+    ViaView(@Autowired ViaService moduloService) {
+        super(moduloService, ViaList.class);
     }
 
 
