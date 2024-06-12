@@ -15,9 +15,8 @@ import org.springframework.beans.factory.annotation.*;
  *
  * @Route chiamata dal menu generale o dalla barra del browser <br>
  */
-@PageTitle("Persone")
 @Route(value = "persona", layout = MainLayout.class)
-@AView(menuGroup = MenuGroup.anagrafe)
+@AView(menuName = "Persone", menuGroup = MenuGroup.anagrafe)
 public class PersonaView extends CrudView {
 
 
@@ -27,8 +26,8 @@ public class PersonaView extends CrudView {
      * Mantiene il riferimento ad una listClazz (CrudList) per creare l'istanza prototype <br>
      * Mantiene il riferimento ad una formClazz (CrudForm) per creare l'istanza prototype <br>
      */
-    PersonaView(@Autowired PersonaService moduloCrudService) {
-        super(moduloCrudService, PersonaList.class, PersonaForm.class);
+    PersonaView(@Autowired PersonaService moduloService) {
+        super(moduloService, PersonaList.class, PersonaForm.class);
     }
 
 }// end of @Route CrudView class
