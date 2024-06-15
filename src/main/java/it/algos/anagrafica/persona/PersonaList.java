@@ -12,7 +12,7 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 
 @SpringComponent
 @Scope(value = SCOPE_PROTOTYPE)
-@AList(gridFooterRow = true)
+@AList()
 public class PersonaList extends CrudList {
 
 
