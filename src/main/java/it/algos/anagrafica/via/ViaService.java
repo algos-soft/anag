@@ -21,7 +21,7 @@ import java.util.*;
  * Time: 07:46
  */
 @Service
-public class ViaService extends CrudCompanyService {
+public class ViaService extends CrudCompanyService<ViaEntity> {
 
     private static final String KEY_NAME = BaseCost.FIELD_NAME_CODE;
 
@@ -55,7 +55,7 @@ public class ViaService extends CrudCompanyService {
     }
 
     @Override
-    public ObjectId getObjectId(AbstractEntity newEntityBean) {
+    public ObjectId getObjectId(ViaEntity newEntityBean) {
         return super.getObjectId(((ViaEntity) newEntityBean).getCode());
     }
 
