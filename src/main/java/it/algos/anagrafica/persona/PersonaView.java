@@ -2,11 +2,11 @@ package it.algos.anagrafica.persona;
 
 import com.vaadin.flow.router.Route;
 import it.algos.vbase.backend.annotation.AView;
+import it.algos.vbase.backend.constant.Gruppo;
 import it.algos.vbase.ui.view.CrudView;
 import it.algos.vbase.ui.view.MainLayout;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import static it.algos.anagrafica.boot.AnagraficaCost.GROUP_ANAG;
 
 /**
  * Project base24
@@ -18,7 +18,7 @@ import static it.algos.anagrafica.boot.AnagraficaCost.GROUP_ANAG;
  * @Route chiamata dal menu generale o dalla barra del browser <br>
  */
 @Route(value = "persona", layout = MainLayout.class)
-@AView(menuGroup = GROUP_ANAG, menuName = "Persone")
+@AView(menuGroup = Gruppo.UTILITY, menuName = "Persone")
 public class PersonaView extends CrudView {
 
 
