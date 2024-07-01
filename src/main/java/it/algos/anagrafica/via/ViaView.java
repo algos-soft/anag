@@ -6,6 +6,8 @@ import it.algos.vbase.ui.view.CrudView;
 import it.algos.vbase.ui.view.MainLayout;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import static it.algos.anagrafica.boot.AnagraficaCost.GROUP_ANAG;
+
 /**
  * Project base24
  * Created by Algos
@@ -16,7 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Route chiamata dal menu generale o dalla barra del browser <br>
  */
 @Route(value = "via", layout = MainLayout.class)
-@AView(menuName = "Vie")
+@AView(menuGroup = GROUP_ANAG, menuName = "Vie")
 public class ViaView extends CrudView {
 
     /**
