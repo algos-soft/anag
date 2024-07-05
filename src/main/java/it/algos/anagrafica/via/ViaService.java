@@ -1,17 +1,17 @@
 package it.algos.anagrafica.via;
 
-import it.algos.anagrafica.via.*;
-import it.algos.vbase.backend.boot.*;
-import it.algos.vbase.backend.entity.*;
-import it.algos.vbase.backend.enumeration.*;
-import it.algos.vbase.backend.logic.*;
-import it.algos.vbase.backend.service.*;
-import it.algos.vbase.backend.wrapper.*;
-import org.bson.types.*;
-import org.springframework.beans.factory.annotation.*;
-import org.springframework.stereotype.*;
+import it.algos.vbase.backend.boot.BaseCost;
+import it.algos.vbase.backend.enumeration.RisultatoReset;
+import it.algos.vbase.backend.enumeration.TypeLog;
+import it.algos.vbase.backend.logic.ModuloService;
+import it.algos.vbase.backend.service.ResourceService;
+import it.algos.vbase.backend.wrapper.WrapLog;
+import org.bson.types.ObjectId;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Project base24
@@ -21,7 +21,7 @@ import java.util.*;
  * Time: 07:46
  */
 @Service
-public class ViaService extends CrudCompanyService<ViaEntity> {
+public class ViaService extends ModuloService<ViaEntity> {
 
     private static final String KEY_NAME = BaseCost.FIELD_NAME_CODE;
 
