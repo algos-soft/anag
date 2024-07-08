@@ -1,15 +1,18 @@
 package it.algos.anagrafica.address;
 
-import com.vaadin.flow.component.orderedlayout.*;
-import com.vaadin.flow.spring.annotation.*;
-import it.algos.vbase.backend.components.*;
-import it.algos.vbase.backend.list.*;
-import it.algos.vbase.ui.wrapper.*;
-import static org.springframework.beans.factory.config.BeanDefinition.*;
-import org.springframework.context.annotation.*;
+import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.spring.annotation.SpringComponent;
+import it.algos.vbase.backend.annotation.AList;
+import it.algos.vbase.backend.components.SimpleVerticalLayout;
+import it.algos.vbase.backend.list.CrudList;
+import it.algos.vbase.ui.wrapper.ASpan;
+import org.springframework.context.annotation.Scope;
+
+import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROTOTYPE;
 
 @SpringComponent
 @Scope(value = SCOPE_PROTOTYPE)
+@AList()
 public class AddressList extends CrudList {
 
 

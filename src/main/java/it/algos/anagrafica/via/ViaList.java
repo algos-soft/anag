@@ -1,17 +1,20 @@
 package it.algos.anagrafica.via;
 
-import com.vaadin.flow.component.*;
-import com.vaadin.flow.component.html.*;
-import com.vaadin.flow.spring.annotation.*;
+import com.vaadin.flow.component.Text;
+import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.spring.annotation.SpringComponent;
+import it.algos.vbase.backend.annotation.AList;
+import it.algos.vbase.backend.components.BAnchor;
+import it.algos.vbase.backend.list.CrudCompanyList;
+import it.algos.vbase.ui.dialog.BSpan;
+import org.springframework.context.annotation.Scope;
+
 import static it.algos.vbase.backend.boot.BaseCost.*;
-import it.algos.vbase.backend.components.*;
-import it.algos.vbase.backend.list.*;
-import it.algos.vbase.ui.dialog.*;
-import static org.springframework.beans.factory.config.BeanDefinition.*;
-import org.springframework.context.annotation.*;
+import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROTOTYPE;
 
 @SpringComponent
 @Scope(value = SCOPE_PROTOTYPE)
+@AList()
 public class ViaList extends CrudCompanyList {
 
 
