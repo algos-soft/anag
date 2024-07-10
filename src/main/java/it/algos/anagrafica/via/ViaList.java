@@ -33,12 +33,12 @@ public class ViaList extends CrudCompanyList {
 
 
 
-    protected void fixPreferenze() {
-        super.fixPreferenze();
-
-        super.usaBottoneDeleteAll = true;
-        super.usaBottoneResetAdd = true;
-    }
+//    protected void fixPreferenze() {
+//        super.fixPreferenze();
+//
+//        super.usaBottoneDeleteAll = true;
+//        super.usaBottoneResetAdd = true;
+//    }
 
 
 

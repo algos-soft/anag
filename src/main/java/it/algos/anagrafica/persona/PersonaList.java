@@ -24,10 +24,10 @@ public class PersonaList extends CrudList {
         super(parentCrudView);
     }
 
-    protected void fixPreferenze() {
-        this.usaBottoneResetDelete = true;
-        this.usaBottoneResetAdd = false;
-    }
+//    protected void fixPreferenze() {
+//        this.usaBottoneResetDelete = true;
+//        this.usaBottoneResetAdd = false;
+//    }
 
     @Override
     public void syncHeader() {
