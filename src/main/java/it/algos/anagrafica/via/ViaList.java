@@ -5,7 +5,7 @@ import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.spring.annotation.SpringComponent;
 import it.algos.vbase.backend.annotation.AList;
 import it.algos.vbase.backend.components.BAnchor;
-import it.algos.vbase.backend.list.CrudCompanyList;
+import it.algos.vbase.backend.list.CrudList;
 import it.algos.vbase.ui.dialog.BSpan;
 import org.springframework.context.annotation.Scope;
 
@@ -15,7 +15,7 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 @SpringComponent
 @Scope(value = SCOPE_PROTOTYPE)
 @AList()
-public class ViaList extends CrudCompanyList {
+public class ViaList extends CrudList {
 
 
     //--non utilizzato. Serve SOLO per evitare un bug di IntelliJIDEA che segnala errore.
