@@ -43,7 +43,7 @@ public class ViaList extends CrudList {
 
 
     @Override
-    protected void syncHeader() {
+    protected void fixHeader() {
         String link = "vie";
         BAnchor anchor = BAnchor.build(LINK_SERVER_ALGOS + link, textService.setQuadre("algos -> " + link));
         BSpan testo = BSpan.text(TEXT_TAVOLA + SPAZIO + TEXT_CSV).bold().verde();

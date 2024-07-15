@@ -30,7 +30,7 @@ public class PersonaList extends CrudList {
 //    }
 
     @Override
-    public void syncHeader() {
+    public void fixHeader() {
         VerticalLayout layout = new SimpleVerticalLayout();
         layout.add(ASpan.text(String.format("Prova")).verde());
 
