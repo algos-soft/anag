@@ -21,7 +21,7 @@ public class ViaEntity extends AbstractEntity {
     private int ordine;
 
     @Indexed(unique = true)
-    @ASearch(type = TypeSearch.textStartsWith)
+    @ASearch(textSearchMode = TextSearchMode.startsWith)
     @AFieldList(headerText = "Nome")
     @AFieldForm(label = "Nome")
     private String code;
