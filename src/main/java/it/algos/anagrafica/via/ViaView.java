@@ -19,7 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Route chiamata dal menu generale o dalla barra del browser <br>
  */
 @Route(value = "via", layout = MainLayout.class)
-@AView(menuGroup = Gruppo.ANAG, menuName = "Vie", lumo = LumoIcon.ARROW_DOWN)
+@AView( menuGroup = Gruppo.ANAG, menuName = "Vie", lumo = LumoIcon.ARROW_DOWN)
 public class ViaView extends CrudView {
 
     /**
