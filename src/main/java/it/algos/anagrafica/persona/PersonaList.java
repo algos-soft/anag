@@ -34,7 +34,7 @@ public class PersonaList extends CrudList {
         VerticalLayout layout = new SimpleVerticalLayout();
         layout.add(ASpan.text(String.format("Prova")).verde());
 
-        super.fixHeaderPost();
+        super.fixHeader();
     }
 
 }// end of CrudList class

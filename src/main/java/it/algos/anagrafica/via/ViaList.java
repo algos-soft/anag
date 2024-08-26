@@ -53,7 +53,7 @@ public class ViaList extends CrudList {
         super.infoCreazione = TEXT_NEWS;
         super.infoReset = TEXT_RESET_ADD;
 
-        super.fixHeaderPost();
+        super.fixHeader();
     }
 
 

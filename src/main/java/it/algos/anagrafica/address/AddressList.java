@@ -38,7 +38,7 @@ public class AddressList extends CrudList {
         layout.add(ASpan.text("Tavola esemplicativa. La singola entity rimane all'interno di Persone.").rosso().small());
         headerPlaceHolder.add(layout);
 
-        super.fixHeaderPost();
+        super.fixHeader();
     }
 
 }// end of CrudList class
