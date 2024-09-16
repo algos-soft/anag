@@ -2,7 +2,7 @@ package it.algos.anagrafica.persona;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.spring.annotation.SpringComponent;
-import it.algos.vbase.backend.annotation.AList;
+import it.algos.vbase.backend.annotation.AViewList;
 import it.algos.vbase.backend.components.SimpleVerticalLayout;
 import it.algos.vbase.backend.list.CrudList;
 import it.algos.vbase.ui.wrapper.ASpan;
@@ -12,7 +12,7 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 
 @SpringComponent
 @Scope(value = SCOPE_PROTOTYPE)
-@AList()
+@AViewList()
 public class PersonaList extends CrudList {
 
 
