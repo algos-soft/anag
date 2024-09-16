@@ -4,7 +4,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.spring.annotation.SpringComponent;
 import it.algos.vbase.backend.annotation.AViewList;
 import it.algos.vbase.backend.components.SimpleVerticalLayout;
-import it.algos.vbase.backend.list.CrudList;
+import it.algos.vbase.backend.list.AList;
 import it.algos.vbase.ui.wrapper.ASpan;
 import org.springframework.context.annotation.Scope;
 
@@ -13,7 +13,7 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 @SpringComponent
 @Scope(value = SCOPE_PROTOTYPE)
 @AViewList()
-public class AddressList extends CrudList {
+public class AddressList extends AList {
 
 
     /**
@@ -41,4 +41,4 @@ public class AddressList extends CrudList {
         super.fixHeader();
     }
 
-}// end of CrudList class
+}// end of AList class

@@ -24,7 +24,7 @@ public class AddressView extends CrudView {
     /**
      * Costruttore alternativo invocato dalla sottoclasse concreta se si usa anche una formClazz specifico <br>
      * Mantiene il riferimento al moduloService (singleton) di questo Modulo <br>
-     * Mantiene il riferimento ad una listClazz (CrudList) per creare l'istanza prototype <br>
+     * Mantiene il riferimento ad una listClazz (AList) per creare l'istanza prototype <br>
      * Mantiene il riferimento ad una formClazz (CrudForm) per creare l'istanza prototype <br>
      */
     AddressView(@Autowired AddressService moduloService) {
