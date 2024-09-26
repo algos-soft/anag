@@ -18,12 +18,6 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 public class ViaList extends AList {
 
 
-    //--non utilizzato. Serve SOLO per evitare un bug di IntelliJIDEA che segnala errore.
-    public ViaList() {
-        super();
-    }
-
-
     /**
      * @param parentCrudView che crea questa istanza
      */
@@ -32,14 +26,12 @@ public class ViaList extends AList {
     }
 
 
-
 //    protected void fixPreferenze() {
 //        super.fixPreferenze();
 //
 //        super.usaBottoneDeleteAll = true;
 //        super.usaBottoneResetAdd = true;
 //    }
-
 
 
     @Override
