@@ -17,6 +17,9 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 @AViewList()
 public class ViaList extends AList {
 
+    protected String infoCreazione;
+
+    protected String infoReset;
 
     /**
      * @param parentCrudView che crea questa istanza
@@ -42,8 +45,8 @@ public class ViaList extends AList {
         headerPlaceHolder.add(new Span(testo, new Text(SPAZIO), anchor));
 
         super.infoScopo = VUOTA;
-        super.infoCreazione = TEXT_NEWS;
-        super.infoReset = TEXT_RESET_ADD;
+        infoCreazione = TEXT_NEWS;
+        infoReset = TEXT_RESET_ADD;
 
         super.fixHeader();
     }

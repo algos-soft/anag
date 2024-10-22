@@ -2,9 +2,9 @@ package it.algos.anagrafica.via;
 
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.LumoIcon;
-import it.algos.vbase.backend.annotation.AView;
+import it.algos.vbase.backend.annotation.IView;
 import it.algos.vbase.backend.constant.Gruppo;
-import it.algos.vbase.ui.view.CrudView;
+import it.algos.vbase.ui.view.AView;
 import it.algos.vbase.ui.view.MainLayout;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -19,8 +19,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Route chiamata dal menu generale o dalla barra del browser <br>
  */
 @Route(value = "via", layout = MainLayout.class)
-@AView( menuGroup = Gruppo.ANAG, menuName = "Vie", lumo = LumoIcon.ARROW_DOWN)
-public class ViaView extends CrudView {
+@IView( menuGroup = Gruppo.ANAG, menuName = "Vie", lumo = LumoIcon.ARROW_DOWN)
+public class ViaView extends AView {
 
     /**
      * Costruttore invocato dalla sottoclasse concreta obbligatoriamente con (almeno) due parametri <br>
