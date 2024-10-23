@@ -3,7 +3,7 @@ package it.algos.anagrafica.via;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.spring.annotation.SpringComponent;
-import it.algos.vbase.annotation.AViewList;
+import it.algos.vbase.annotation.IViewList;
 import it.algos.vbase.components.BAnchor;
 import it.algos.vbase.list.AList;
 import it.algos.vbase.ui.dialog.BSpan;
@@ -14,7 +14,7 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 
 @SpringComponent
 @Scope(value = SCOPE_PROTOTYPE)
-@AViewList()
+@IViewList()
 public class ViaList extends AList {
 
     protected String infoCreazione;

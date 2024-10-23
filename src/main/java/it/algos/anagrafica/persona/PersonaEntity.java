@@ -1,8 +1,8 @@
 package it.algos.anagrafica.persona;
 
 import it.algos.anagrafica.address.AddressEntity;
-import it.algos.vbase.annotation.AEntity;
-import it.algos.vbase.annotation.AFieldList;
+import it.algos.vbase.annotation.IEntity;
+import it.algos.vbase.annotation.IFieldList;
 import it.algos.vbase.entity.AbstractEntity;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,25 +15,25 @@ import static it.algos.vbase.boot.BaseCost.SPAZIO;
 @AllArgsConstructor
 @Builder
 @Document(collection = "persona")
-@AEntity()
+@IEntity()
 public class PersonaEntity extends AbstractEntity {
 
-    @AFieldList(width = 6)
+    @IFieldList(width = 6)
     private String titolo;
 
-    @AFieldList()
+    @IFieldList()
     private String nome;
 
-    @AFieldList()
+    @IFieldList()
     private String cognome;
 
-    @AFieldList(width = 8)
+    @IFieldList(width = 8)
     private String telefono;
 
-    @AFieldList(width = 16)
+    @IFieldList(width = 16)
     private String mail;
 
-    @AFieldList()
+    @IFieldList()
 //    @AField(type = TypeField.linkDBRef)
     private AddressEntity address;
 
