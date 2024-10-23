@@ -1,11 +1,11 @@
 package it.algos.anagrafica.via;
 
-import it.algos.vbase.backend.boot.BaseCost;
-import it.algos.vbase.backend.enumeration.RisultatoReset;
-import it.algos.vbase.backend.enumeration.TypeLog;
-import it.algos.vbase.backend.logic.ModuloService;
-import it.algos.vbase.backend.service.ResourceService;
-import it.algos.vbase.backend.wrapper.WrapLog;
+import it.algos.vbase.boot.BaseCost;
+import it.algos.vbase.enumeration.RisultatoReset;
+import it.algos.vbase.enumeration.TypeLog;
+import it.algos.vbase.logic.ModuloService;
+import it.algos.vbase.service.ResourceService;
+import it.algos.vbase.wrapper.WrapLog;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

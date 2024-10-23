@@ -1,8 +1,8 @@
 package it.algos.anagrafica.via;
 
-import it.algos.vbase.backend.annotation.*;
-import it.algos.vbase.backend.entity.*;
-import it.algos.vbase.backend.enumeration.*;
+import it.algos.vbase.annotation.*;
+import it.algos.vbase.entity.AbstractEntity;
+import it.algos.vbase.enumeration.TextSearchMode;
 import lombok.*;
 import org.springframework.data.mongodb.core.index.*;
 import org.springframework.data.mongodb.core.mapping.*;

@@ -3,13 +3,13 @@ package it.algos.anagrafica.via;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.spring.annotation.SpringComponent;
-import it.algos.vbase.backend.annotation.AViewList;
-import it.algos.vbase.backend.components.BAnchor;
-import it.algos.vbase.backend.list.AList;
+import it.algos.vbase.annotation.AViewList;
+import it.algos.vbase.components.BAnchor;
+import it.algos.vbase.list.AList;
 import it.algos.vbase.ui.dialog.BSpan;
 import org.springframework.context.annotation.Scope;
 
-import static it.algos.vbase.backend.boot.BaseCost.*;
+import static it.algos.vbase.boot.BaseCost.*;
 import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROTOTYPE;
 
 @SpringComponent

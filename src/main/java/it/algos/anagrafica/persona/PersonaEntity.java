@@ -1,13 +1,13 @@
 package it.algos.anagrafica.persona;
 
 import it.algos.anagrafica.address.AddressEntity;
-import it.algos.vbase.backend.annotation.AEntity;
-import it.algos.vbase.backend.annotation.AFieldList;
-import it.algos.vbase.backend.entity.AbstractEntity;
+import it.algos.vbase.annotation.AEntity;
+import it.algos.vbase.annotation.AFieldList;
+import it.algos.vbase.entity.AbstractEntity;
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import static it.algos.vbase.backend.boot.BaseCost.SPAZIO;
+import static it.algos.vbase.boot.BaseCost.SPAZIO;
 
 @Data
 @EqualsAndHashCode(callSuper = true)

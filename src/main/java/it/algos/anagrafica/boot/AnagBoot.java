@@ -1,6 +1,6 @@
 package it.algos.anagrafica.boot;
 
-import it.algos.vbase.backend.boot.*;
+import it.algos.vbase.boot.BaseBoot;
 import org.springframework.stereotype.*;
 
 /**
