@@ -10,6 +10,7 @@ import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -27,6 +28,8 @@ public class ViaService extends ModuloService<ViaEntity> {
 
     @Autowired
     private ResourceService resourceService;
+
+    private Map<String, ViaEntity> mappaBeans= new HashMap<>();
 
     /**
      * Regola la entityClazz associata a questo Modulo e la passa alla superclasse <br>
