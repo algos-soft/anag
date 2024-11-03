@@ -21,7 +21,6 @@ public class AddressEntity extends AbstractEntity {
 
     @DBRef
     @IFieldList(width = 8)
-//    @AField(type = TypeField.linkDBRef, linkClazz = ViaEntity.class)
     private ViaEntity typeVia;
 
     @IFieldList(width = 14)

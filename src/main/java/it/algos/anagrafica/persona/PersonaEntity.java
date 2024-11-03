@@ -34,7 +34,6 @@ public class PersonaEntity extends AbstractEntity {
     private String mail;
 
     @IFieldList()
-//    @AField(type = TypeField.linkDBRef)
     private AddressEntity address;
 
     @Override
