@@ -2,7 +2,7 @@ package it.algos.anagrafica.address;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.spring.annotation.SpringComponent;
-import it.algos.vbase.annotation.IViewList;
+import it.algos.vbase.annotation.IList;
 import it.algos.vbase.components.SimpleVerticalLayout;
 import it.algos.vbase.list.AList;
 import it.algos.vbase.ui.wrapper.ASpan;
@@ -12,7 +12,7 @@ import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROT
 
 @SpringComponent
 @Scope(value = SCOPE_PROTOTYPE)
-@IViewList()
+@IList()
 public class AddressList extends AList {
 
 
