@@ -27,7 +27,7 @@ public class AddressService extends ModuloService {
      * Regola la viewClazz @Route associata a questo Modulo <br>
      */
     public AddressService() {
-        super(AddressEntity.class, AddressView.class);
+        super(AddressEntity.class);
     }
 
 

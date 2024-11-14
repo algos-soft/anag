@@ -37,7 +37,7 @@ public class ViaService extends ModuloService<ViaEntity> {
      * Regola la listClazz associata a questo Modulo e la passa alla superclasse <br>
      */
     public ViaService() {
-        super(ViaEntity.class, ViaView.class);
+        super(ViaEntity.class);
     }
 
 

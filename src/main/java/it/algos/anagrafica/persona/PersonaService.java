@@ -23,7 +23,7 @@ public class PersonaService extends ModuloService {
      * Regola la viewClazz @Route associata a questo Modulo <br>
      */
     public PersonaService() {
-        super(PersonaEntity.class, PersonaView.class);
+        super(PersonaEntity.class);
     }
 
 
