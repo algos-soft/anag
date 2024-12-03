@@ -19,7 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Route chiamata dal menu generale o dalla barra del browser <br>
  */
 @Route(value = "via", layout = MainLayout.class)
-@IView( menuGroup = Gruppo.ANAG, menuName = "Vie", lumo = LumoIcon.ARROW_DOWN)
+@IView(menuGroup = Gruppo.ANAG, menuName = "Vie", lumo = LumoIcon.ARROW_DOWN)
 public class ViaView extends AView {
 
     /**
@@ -28,7 +28,7 @@ public class ViaView extends AView {
      * Mantiene il riferimento ad una listClazz (AList) per creare l'istanza prototype <br>
      */
     ViaView(@Autowired ViaService moduloService) {
-        super(moduloService, ViaList.class);
+        super(ViaEntity.class, moduloService, ViaList.class);
     }
 
 

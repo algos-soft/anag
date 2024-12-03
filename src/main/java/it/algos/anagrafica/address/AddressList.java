@@ -25,11 +25,6 @@ public class AddressList extends AList {
     }
 
 
-//    protected void fixPreferenze() {
-//
-//        this.usaBottoneResetDelete = true;
-//        this.usaBottoneResetAdd = false;
-//    }
 
     @Override
     public void fixHeader() {

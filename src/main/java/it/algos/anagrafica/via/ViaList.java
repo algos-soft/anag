@@ -29,12 +29,6 @@ public class ViaList extends AList {
     }
 
 
-//    protected void fixPreferenze() {
-//        super.fixPreferenze();
-//
-//        super.usaBottoneDeleteAll = true;
-//        super.usaBottoneResetAdd = true;
-//    }
 
 
     @Override

@@ -24,11 +24,6 @@ public class PersonaList extends AList {
         super(parentCrudView);
     }
 
-//    protected void fixPreferenze() {
-//        this.usaBottoneResetDelete = true;
-//        this.usaBottoneResetAdd = false;
-//    }
-
     @Override
     public void fixHeader() {
         VerticalLayout layout = new SimpleVerticalLayout();
