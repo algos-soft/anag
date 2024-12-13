@@ -6,6 +6,7 @@ import it.algos.vbase.enumeration.TypeLog;
 import it.algos.vbase.logic.ModuloService;
 import it.algos.vbase.service.ResourceService;
 import it.algos.vbase.wrapper.WrapLog;
+import lombok.extern.slf4j.Slf4j;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,7 @@ import java.util.Map;
  * Date: mer, 25-ott-2023
  * Time: 07:46
  */
+@Slf4j
 @Service
 public class ViaService extends ModuloService<ViaEntity> {
 
@@ -95,7 +97,7 @@ public class ViaService extends ModuloService<ViaEntity> {
         }
         else {
             message = String.format("Manca il file [%s] nella directory /config o sul server", nomeFileCSV);
-            logger.warn(new WrapLog().message(message).type(TypeLog.startup));
+            log.warn(message);
             return RisultatoReset.nonCostruito;
         }
     }
