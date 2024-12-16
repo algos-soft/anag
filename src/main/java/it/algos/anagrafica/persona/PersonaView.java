@@ -18,12 +18,12 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Route chiamata dal menu generale o dalla barra del browser <br>
  */
 @Route(value = "persona", layout = MainLayout.class)
-@IView( menuGroup = Gruppo.ANAG, menuName = "Persone")
+@IView(menuGroup = Gruppo.ANAG, menuName = "Persone")
 public class PersonaView extends AView {
 
 
     PersonaView(@Autowired PersonaService moduloService) {
-        super(moduloService, PersonaList.class, PersonaForm.class);
+        super(PersonaEntity.class, moduloService, PersonaList.class, PersonaForm.class);
     }
 
 }// end of @Route CrudView class
