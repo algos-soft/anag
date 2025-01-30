@@ -3,7 +3,7 @@ package it.algos.anagrafica.via;
 import it.algos.vbase.boot.BaseCost;
 import it.algos.vbase.enumeration.RisultatoReset;
 import it.algos.vbase.enumeration.TypeLog;
-import it.algos.vbase.logic.ModuloService;
+import it.algos.vbase.service.ModuloService;
 import it.algos.vbase.service.ResourceService;
 import it.algos.vbase.wrapper.WrapLog;
 import lombok.extern.slf4j.Slf4j;

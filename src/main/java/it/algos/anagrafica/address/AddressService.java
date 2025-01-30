@@ -2,7 +2,7 @@ package it.algos.anagrafica.address;
 
 import it.algos.anagrafica.via.*;
 import it.algos.vbase.enumeration.RisultatoReset;
-import it.algos.vbase.logic.ModuloService;
+import it.algos.vbase.service.ModuloService;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.*;
 

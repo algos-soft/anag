@@ -2,7 +2,7 @@ package it.algos.anagrafica.persona;
 
 import it.algos.anagrafica.address.*;
 import it.algos.vbase.enumeration.RisultatoReset;
-import it.algos.vbase.logic.ModuloService;
+import it.algos.vbase.service.ModuloService;
 import org.springframework.stereotype.*;
 
 import static it.algos.vbase.boot.BaseCost.VUOTA;
