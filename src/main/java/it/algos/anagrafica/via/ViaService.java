@@ -9,6 +9,7 @@ import it.algos.vbase.wrapper.WrapLog;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -80,7 +81,7 @@ public class ViaService extends ModuloService<ViaEntity> {
     }
 
 
-    public RisultatoReset reset() {
+    public RisultatoReset reset(MongoTemplate mongoTemplate) {
         String nomeFileCSV = "vie.csv";
         int pos = 0;
         String message;

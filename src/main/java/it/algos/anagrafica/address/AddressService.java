@@ -4,6 +4,7 @@ import it.algos.anagrafica.via.*;
 import it.algos.vbase.enumeration.RisultatoReset;
 import it.algos.vbase.service.ModuloService;
 import org.springframework.beans.factory.annotation.*;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.*;
 
 import static it.algos.vbase.boot.BaseCost.VUOTA;
@@ -73,7 +74,7 @@ public class AddressService extends ModuloService {
 //    }
 
     @Override
-    public RisultatoReset reset() {
+    public RisultatoReset reset(MongoTemplate mongoTemplate) {
 //        ViaEntity viaBean0 = viaModulo.findByCode("via");
 //        ViaEntity viaBean1 = viaModulo.findByCode("viale");
 //        ViaEntity viaBean2 = viaModulo.findByCode("piazza");
