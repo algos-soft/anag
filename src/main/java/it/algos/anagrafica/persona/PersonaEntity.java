@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import static it.algos.vbase.boot.BaseCost.SPAZIO;
 
 @Data
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
