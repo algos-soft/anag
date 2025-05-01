@@ -80,9 +80,9 @@ public class PersonaService extends ModuloService {
     public RisultatoReset resetDelete() {
         RisultatoReset typeReset = super.resetDelete();
 
-        insert(newEntity("Mario", "Rossi"));
-        insert(newEntity("Maria Giovanna", "Brambilla", "339 254377", "giovanna.brambilla.libero.it"));
-        insert(newEntity("Odoardo Luigi", "Passerini", "", "passerini@win.com"));
+//        insert(newEntity("Mario", "Rossi"));
+//        insert(newEntity("Maria Giovanna", "Brambilla", "339 254377", "giovanna.brambilla.libero.it"));
+//        insert(newEntity("Odoardo Luigi", "Passerini", "", "passerini@win.com"));
 
         return null;
     }
